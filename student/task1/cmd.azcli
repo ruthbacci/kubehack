@@ -1,0 +1,24 @@
+#test that docker is running ok
+docker run hello-world
+
+#get help on docker run
+docker run --help
+
+#pull busybox app from docker public registry
+docker pull busybox
+
+#see the docker images that have been pulled down from the docker registry
+docker images
+
+#run busybox send the included command
+docker run busybox echo "hello from busybox"
+
+#view all the containers that are currently running
+docker ps
+
+#view a list of all the containers that we ran
+docker ps -a 
+
+docker rm <container id>
+
+docker images
